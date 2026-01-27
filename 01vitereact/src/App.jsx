@@ -1,8 +1,14 @@
+import Chai from "./chai.jsx";
+
 function App() {
+  const username = 'chai aur code'
 
   return (
     <>
-      <h1>Chai aur React with Vite | Aman Shahi</h1>
+      <h1>Chai aur React with Vite | Aman Shahi | {username}</h1>
+
+      <Chai/>
+
       <p>
         In this lecture we learn about:
         <ul>

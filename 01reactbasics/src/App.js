@@ -1,6 +1,9 @@
+import Chai from "./Chai.js";
+
 function App() {
   return (
     <>
+      <Chai/>
       <h1>Chai aur React | Aman Shahi</h1>
       <p>
         In this lecture we learn about:
