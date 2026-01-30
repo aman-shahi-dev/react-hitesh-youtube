@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useTodo } from "../contexts/TodoContext";
 
-import { IconEdit, IconEditOff } from "@tabler/icons-react";
+import { IconEdit, IconDeviceFloppy } from "@tabler/icons-react";
 
 export default function TodoItem({ todo }) {
   const { deleteTodo, toggleIsCompleted, updateTodo } = useTodo();
@@ -49,13 +49,13 @@ export default function TodoItem({ todo }) {
           }
         }}
         disabled={todo.isCompleted}
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
+        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50 cursor-pointer"
       >
-        {isTodoEditable ? <IconEditOff /> : <IconEdit />}
+        {isTodoEditable ? <IconDeviceFloppy /> : <IconEdit />}
       </button>
       <button
         onClick={() => deleteTodo(todo.id)}
-        className="w-8 h-8 inline-flex rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
+        className="w-8 h-8 inline-flex rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 cursor-pointer"
       >
         ❌
       </button>
